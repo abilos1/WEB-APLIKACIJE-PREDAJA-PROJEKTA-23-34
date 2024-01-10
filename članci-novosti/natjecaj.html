@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style6.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Football referee">
+    <meta name="keywords" content="football, referee, be a referee,">
+    <meta name="author" content="Ante Biloš">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novosti</title>
+    <link rel="shortcut icon" href="zastava.jpg">
+
+    
+</head>
+
+<body>
+    <header>
+        <h1>Postani nogometni sudac</h1>
+    </header>
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="o_nama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+        <h2>Novosti</h2>
+        <p>Datum objave: 30.prosinca 2023.</p>
+    </header>
+    <main>
+        <h2>Natječaj za mladog suca ili sutkinju</h2>
+        <a href="postanisudac.jpg" class="lightbox-trigger"><img src="postanisudac.jpg" width="300" height="250" alt="Postani sudac" title="Postani sudac"></a>
+        <h3>Postani nogometni sudac. Prijave su otvorene do 15.01.2024.</h3>
+
+        <p>Želite li biti ključni dio uzbuđenja na nogometnom terenu? Imate li strast prema nogometu i želju za poštovanjem pravila igre? Ako je odgovor da, onda je ovaj natječaj upravo za vas! Nudimo vam priliku da postanete nogometni sudac i doprinesete sportskoj zajednici. Prijavite se i započnite svoje putovanje prema uzbudljivoj karijeri suđenja.</p>
+        <p>Detalji Natječaja:</p>
+        <p>1. Prijave:</p>
+        <p>Prijave su otvorene odmah i traju do 15. siječnja 2024.
+            Svi zainteresirani mladići i djevojke mogu se prijaviti putem online obrasca na našoj službenoj web stranici.</p>
+        <p>2. Kvalifikacije:</p>
+        <p>Minimalna dob za prijavu je 18 godina.
+            Poželjno je poznavanje pravila nogometne igre, ali nije uvjet. Sve će biti naučeno tijekom edukacije.</p>
+        <p>3. Edukacija i Trening:</p>
+        <p>Odabrani kandidati će proći kroz sveobuhvatni tečaj suđenja, koji uključuje teorijsku i praktičnu obuku.
+            Stručni instruktori pružit će potrebna znanja i vještine kako bi kandidati postali kompetentni i samopouzdani nogometni suci.</p>
+        <p>4. Selekcija:</p>
+        <p>Selekcija će se provesti na temelju motivacije, sportskog duha, potencijala za učenje i pridržavanja etičkih normi.</p>
+        <p>5. Radna Prilika:</p>
+        <p>Nakon uspješnog završetka edukacije, kandidati će dobiti priliku suđenja na lokalnim i regionalnim utakmicama kako bi stekli stvarno iskustvo.</p>
+        <p>6. Nagrade:</p>
+        <p>Najbolji mladi suci će biti nagrađeni posebnim priznanjima i imat će priliku sudjelovati u naprednijim razinama suđenja.</p>
+        <p>Kako se Prijaviti:</p>
+        <p>Ispunite online prijavni obrazac s potrebnim informacijama.</p>
+        <p>Priložite kratko motivacijsko pismo u kojem ćete opisati zašto želite postati nogometni sudac.</p>
+        <p>Ova prilika je izvanredna šansa za mlade entuzijaste koji žele aktivno sudjelovati u svijetu nogometa. Postanite suci i sutkinje koji će biti uzor drugima, promičući fair-play, integritet i strast prema sportu. Prijavite se do 15. siječnja 2024. i zakoračite u uzbudljivu karijeru nogometnog suđenja!</p>
+
+<hr></hr>
+        <div class="gallery">
+            <a href="postanisudac.jpg" class="lightbox-trigger"><img
+                    src="postanisudac.jpg"
+                    alt="Postani sudac" title="Postani sudac"></a>
+            <a href="postanisudac1.jpg" class="lightbox-trigger"><img src="postanisudac1.jpg" alt="Prihvati izazov" title="Prihvati izazov"></a>
+           </div>
+
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="Lightbox">
+        </div>
+
+        <a href="#" class="lightbox-trigger" onclick="history.go(-1);">Natrag</a>
+    </main>
+    <footer>
+        <p>Copyright © 2023 Ante Biloš
+        <a href="https://github.com/abilos1" target="_blank">
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Ante Biloš">
+        </a>
+        </p>
+        <a>Društvene mreže:
+        <a href="https://www.facebook.com/profile.php?id=100002227831858" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/antebilos/?hl=hr" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxTrigger = document.querySelectorAll('.lightbox-trigger');
+
+            lightboxTrigger.forEach(trigger => {
+                trigger.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    lightbox.style.display = 'flex';
+                    lightbox.querySelector('img').src = this.href;
+                });
+            });
+
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

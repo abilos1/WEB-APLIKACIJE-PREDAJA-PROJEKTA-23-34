@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style6.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Football referee">
+    <meta name="keywords" content="football, referee, be a referee,">
+    <meta name="author" content="Ante Biloš">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novosti</title>
+    <link rel="shortcut icon" href="zastava.jpg">
+
+    
+</head>
+
+<body>
+    <header>
+        <h1>Postani nogometni sudac</h1>
+    </header>
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="o_nama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+        <h2>Novosti</h2>
+        <p>Datum objave: 30.prosinca 2023.</p>
+    </header>
+    <main>
+        <h2>Raspored delegiranja ovog Vikenda</h2>
+        <h3>Raspored parova, delegata i sudaca za prvenstvene utakmice 1.i 2. ŽNL</h3>
+
+        <p>Raspored parova, delegata i sudaca za prvenstvene utakmice 7. kola 1. i 2. ŽNL  koje se igraju 16. i 17.02.2023. godine. </p>
+        <p>Redovito praćenje satnice omogućuje pravovremeno reagiranje na eventualne odgode ili promjene u rasporedu, čime se održava fluidnost natjecanja.</p>
+        <p>Suce i delegate molimo da se pridržavaju satnica utakmica i na vrijeme izvijeste o eventualnim razlozima o nemogućnosti dolaska na utakmicu za koju su delegirani.</p>
+
+<hr></hr>
+        <div class="gallery">
+            <a href="delegiranje1.png" class="lightbox-trigger"><img src="delegiranje1.png"  alt="Delegiranje 2.ŽNL" title="Delegiranje 2.ŽNL"></a>
+            <a href="delegiranje2.png" class="lightbox-trigger"><img src="delegiranje2.png"  alt="Delegiranje 1.ŽNL" title="Delegiranje 1.ŽNL"></a>
+           </div>
+
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="Lightbox">
+        </div>
+
+        <a href="#" class="lightbox-trigger" onclick="history.go(-1);">Natrag</a>
+    </main>
+    <footer>
+        <p>Copyright © 2023 Ante Biloš
+        <a href="https://github.com/abilos1" target="_blank">
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Ante Biloš">
+        </a>
+        </p>
+        <a>Društvene mreže:
+        <a href="https://www.facebook.com/profile.php?id=100002227831858" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/antebilos/?hl=hr" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxTrigger = document.querySelectorAll('.lightbox-trigger');
+
+            lightboxTrigger.forEach(trigger => {
+                trigger.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    lightbox.style.display = 'flex';
+                    lightbox.querySelector('img').src = this.href;
+                });
+            });
+
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

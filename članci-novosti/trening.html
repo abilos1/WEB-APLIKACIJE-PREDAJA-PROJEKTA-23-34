@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style6.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Football referee">
+    <meta name="keywords" content="football, referee, be a referee,">
+    <meta name="author" content="Ante Biloš">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novosti</title>
+    <link rel="shortcut icon" href="zastava.jpg">
+
+    
+</head>
+
+<body>
+    <header>
+        <h1>Postani nogometni sudac</h1>
+    </header>
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="o_nama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+        <h2>Novosti</h2>
+        <p>Datum objave: 30.prosinca 2023.</p>
+    </header>
+    <main>
+        <h2>Trening sudaca 01.12.2023.</h2>
+        <h3>Najava i Poziv na Trening za Nogometne Sudce u Novalji - 01.12.2023.</h3>
+
+        <p>Poštovani suci,
+ s velikim zadovoljstvom obavještavamo vas o nadolazećem treningu za nogometne suce koji će se održati 1. prosinca 2023. u predivnom okruženju Novalje. Ovaj događaj ima za cilj unaprijediti vaše vještine, produbiti razumijevanje pravila igre te promicati kolegijalnost među sudcima. U nastavku slijede ključne informacije o treningu: </p>
+<p>Detalji Treninga:</p>
+<p>Datum: 01. prosinca 2023.</p>
+<p>Mjesto: Novalja, prekrasno turističko odredište na otoku Pagu</p>
+<p>Raspored Treninga:</p>
+<p>8:30 - 9:00: Registracija i Dobrodošlica.
+Sudionici će imati priliku registrirati se i upoznati s kolegama sucima iz različitih regija.</p>
+    
+<p>9:00 - 10:30: Teorijski Segment - Razmatranje Novih Pravila
+    Stručnjaci će prezentirati i raspravljati o najnovijim pravilima igre. Sudionici će imati priliku postavljati pitanja i razmjenjivati iskustva.</p>
+<p>10:30 - 11:00: Pauza za Odmor
+    Prilika za osvježenje i neformalne razgovore.</p>
+<p>11:00 - 12:30: Praktična Vježba na Terenu
+    Vježbe suđenja na terenu uz stručno vođenje. Fokus će biti na praktičnoj primjeni pravila te situacijama koje se često pojavljuju tijekom utakmica.</p>
+<p>12:30 - 14:00: Ručak i Druženje.
+    Poslužit će se ručak, a sudionici će imati priliku razgovarati s kolegama i izmjenjivati iskustva. </p>
+<p>14:00 - 15:30: Analiza Video Materijala.
+    Prikazivanje ključnih situacija iz stvarnih utakmica radi dodatnog razumijevanja i poboljšanja suđenja.</p>
+<p>15:30 - 16:00: Zaključak i Dodjela Certifikata</p>
+<p>Završetak treninga uz podjelu certifikata sudionicima.</p>
+<hr></hr>
+        <div class="gallery">
+            <a href="trening.jpg" class="lightbox-trigger"><img
+                    src="trening.jpg"
+                    alt="Trening-seminar" title="Trening-seminar"></a>
+            
+           </div>
+
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="Lightbox">
+        </div>
+
+        <a href="#" class="lightbox-trigger" onclick="history.go(-1);">Natrag</a>
+    </main>
+    <footer>
+        <p>Copyright © 2023 Ante Biloš
+        <a href="https://github.com/abilos1" target="_blank">
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Ante Biloš">
+        </a>
+        </p>
+        <a>Društvene mreže:
+        <a href="https://www.facebook.com/profile.php?id=100002227831858" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/antebilos/?hl=hr" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxTrigger = document.querySelectorAll('.lightbox-trigger');
+
+            lightboxTrigger.forEach(trigger => {
+                trigger.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    lightbox.style.display = 'flex';
+                    lightbox.querySelector('img').src = this.href;
+                });
+            });
+
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style6.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Football referee">
+    <meta name="keywords" content="football, referee, be a referee,">
+    <meta name="author" content="Ante Biloš">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novosti</title>
+    <link rel="shortcut icon" href="zastava.jpg">
+
+    
+</head>
+
+<body>
+    <header>
+        <h1>Postani nogometni sudac</h1>
+    </header>
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="novosti.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="o_nama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+        <h2>Novosti</h2>
+        <p>Datum objave: 30.prosinca 2023.</p>
+    </header>
+    <main>
+        <h2>PNI</h2>
+        <h3>Pravila Nogometne Igre: Temelji Igračke Stratešnosti i Sportskog Duha</h3>
+<img src="https://www.vecernji.hr/media/img/cb/e4/16e59a17e42dcc9b68c4.jpeg" width="350" height="250" alt="Sutkinje" title="Sutkinje">
+<p>Nogomet, bez sumnje, jedan je od najpopularnijih sportova na svijetu, okupljajući milijune zaljubljenika u igru diljem svih kontinenata. Ključ uspješne i poštene igre leži u pravilima nogometne igre, čije suštinske smjernice stvaraju temelj fer natjecanja, uzbuđujućih utakmica i sportskog duha.</p>
+<p>Pravila nogometne igre, poznata kao "Laws of the Game," sastavljena su od 17 pravila koja definiraju sve aspekte igre. Osnovne smjernice obuhvaćaju dimenzije igrališta, broj igrača, pravila suđenja, i druga ključna pravila koja čine igru dinamičnom i poštenom.</p>
+<p>Dimenzije nogometnog igrališta standardizirane su prema međunarodnim pravilima, s precizno određenim veličinama terena, golova i centar kruga. Ova pravila jamče dosljednost igre na svim razinama natjecanja.</p>
+<p>Standardan broj igrača na terenu je 11 po timu, uključujući jednog vratara. Ovo pravilo osigurava balans između momčadi te doprinosi dinamičnosti igre.</p>
+<p>Suđenje igre povjereno je glavnom sucu i njegovim pomoćnicima. Pravila suđenja obuhvaćaju različite aspekte, uključujući prekršaje, zaleđa, dodavanje izvan igre i druge situacije. Suci su odgovorni za primjenu ovih pravila kako bi održali red, pravednost i sportski duh tijekom utakmica.</p>
+<p>Pravila nogometne igre nisu samo formalnosti koje treba slijediti; one su temelj sportskog duha, poštovanja i uzbuđenja koji igra donosi. Bez obzira igrate li ili promatrate utakmice, razumijevanje i poštivanje pravila nogometa ključno je za iskustvo koje ovo globalno voljeni sport pruža. Kroz dosljednu primjenu pravila, nogomet ostaje jedinstven i uzbudljiv izraz sportske strasti na svjetskoj pozornici.</p>
+<hr></hr>
+        <div class="gallery">
+            <a href="https://www.vecernji.hr/media/img/f1/4b/71d3ee760c9297403bc0.jpeg" class="lightbox-trigger"><img src="https://www.vecernji.hr/media/img/f1/4b/71d3ee760c9297403bc0.jpeg"
+                    alt="VAR sustav" title="VAR sustav"></a>
+            <a href="https://images.techinsider.ru/upload/img_cache/667/667095fa0ae9e7e6532b60982c4ce474_cropped_666x418.jpg" class="lightbox-trigger"><img src="https://images.techinsider.ru/upload/img_cache/667/667095fa0ae9e7e6532b60982c4ce474_cropped_666x418.jpg" alt="Goal line technology" title="Goal line technology"></a>
+           </div>
+
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="Lightbox">
+        </div>
+
+        <a href="#" class="lightbox-trigger" onclick="history.go(-1);">Natrag</a>
+    </main>
+    <footer>
+        <p>Copyright © 2023 Ante Biloš
+        <a href="https://github.com/abilos1" target="_blank">
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Ante Biloš">
+        </a>
+        </p>
+        <a>Društvene mreže:
+        <a href="https://www.facebook.com/profile.php?id=100002227831858" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/antebilos/?hl=hr" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxTrigger = document.querySelectorAll('.lightbox-trigger');
+
+            lightboxTrigger.forEach(trigger => {
+                trigger.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    lightbox.style.display = 'flex';
+                    lightbox.querySelector('img').src = this.href;
+                });
+            });
+
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
