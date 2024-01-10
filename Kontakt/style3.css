@@ -1,0 +1,120 @@
+
+        body {
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: rgb(42, 66, 111);
+            color: white;
+        }
+
+        header {
+            background-color: rgb(30, 92, 205);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            background-color: #444;
+            flex: 1;
+            padding: 20px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .map-container,
+        .form-container {
+            flex: 1;
+            max-width: 48%;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #444;
+        }
+
+        hr {
+            border: 1px solid #fff;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: rgb(30, 92, 205);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer img {
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        a {
+            color: #ffcc00;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
